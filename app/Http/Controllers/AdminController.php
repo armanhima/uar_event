@@ -73,7 +73,7 @@ class AdminController extends Controller
 
         return view('admin.detailEvent', compact('event', 'jumlahTiketTerjual', 'jumlahTiketTersisa'));
     }
-
+      // ini pak controller buat bikin pesanannya
     public function Tampil()
     {
         $ticket = \App\Models\event::first();
@@ -89,5 +89,6 @@ class AdminController extends Controller
 
         return redirect()->route('admin.tiket');
     }
+    // ini pak controller buat bikin pesanannya viewnya di admin/tiket
 
 }
